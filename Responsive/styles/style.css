@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  height: 100%;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.flex-example {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.flex-example-header {
+  display: flex;
+  flex: 0 1 100px;
+  justify-content: center;
+  align-items: center;
+  background: grey;
+}
+
+.flex-example-main {
+  flex-grow: 1;
+  display: flex;
+  background: beige;
+}
+
+.flex-example-footer {
+  flex: 0 1;
+  display: flex;
+  background: grey;
+  padding: 1rem;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.flex-example-footer > div {
+  background: lightgray;
+  padding: 2rem 1rem;
+  flex-grow: 1;
+}
+
+.flex-example-aside {
+  flex: 0 1 30%;
+  background: aquamarine;
+  padding: 2rem;
+}
+
+.flex-example-content {
+  flex: 1 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-example-content__main-part {
+  flex: 1;
+}
+
+.flex-example-content__bottom-part {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+}
+
+.flex-example-content__bottom-part > div {
+  background: bisque;
+  padding: 2rem 1rem;
+}
+
+.flex-example-content__bottom-part > div:nth-child(1),
+.flex-example-content__bottom-part > div:nth-child(2) {
+  flex: 0 1 calc(50% - 1rem);
+}
+
+.flex-example-content__bottom-part > div:nth-child(3) {
+  flex-grow: 1;
+}/*# sourceMappingURL=style.css.map */

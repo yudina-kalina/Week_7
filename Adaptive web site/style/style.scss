@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.flex-example {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.flex-example-header {
+  display: flex;
+  height: 100px;
+  margin-left: 10vw;
+  margin-top: 10vh;
+  flex: 0 1 100px;
+}
+
+.flex-example-main {
+  display: flex;
+  min-height: 100vh;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.flex-example-content {
+  display: flex;
+  width: 558.085px;
+  height: 565.149px;
+  flex-shrink: 0;
+  margin-left: 5vw;
+}
+
+li {
+  list-style-type: none; /* Убираем маркеры */
+}
+ul {
+  padding-left: 0; /* Сдвигаем список влево */
+}
+
+.flex-example-aside {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-left: 7%;
+}
+
+.block-1 {
+  color: #000;
+  font-family: Finlandica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  text-decoration-line: underline;
+}
+.block-2 {
+  color: #000;
+  font-family: Finlandica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+h1 {
+  color: #000;
+  font-family: Sofia Sans;
+  font-size: 2em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: solid 1px salmon;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: Sofia Sans;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 1000;
+  line-height: normal;
+  border: solid 1px salmon;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  border: solid 1px salmon;
+  color: #000;
+  font-family: Aqum;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
